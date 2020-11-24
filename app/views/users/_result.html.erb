@@ -14,7 +14,7 @@
     <% else %>
       <span class="badge badge-secondary">
         You are already tracked
-        <% if current_user.under_stock_limit? %>
+        <% if !current_user.under_stock_limit? %>
           10 stocks
         <% end %>
         <% if current_user.stock_already_tracked?(@stock.ticker) %>
