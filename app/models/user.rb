@@ -29,6 +29,13 @@ class User < ApplicationRecord
     "Anonymous"
   end
 
+  #provide and recomented logic by wasif vai  
+  # def full_name
+  #   name = [first_name.presence, last_name.presence].compact.join(' ').presence
+  #
+  #   name || 'Anonymous'
+  # end
+
   def self.search(param)
     param.strip!
     to_send_back = (first_name_matches(param) + last_name_matches(param) + email_matches(param)).uniq
