@@ -24,6 +24,9 @@ gem 'devise-bootstrap-views', '~> 1.0'
 gem 'iex-ruby-client'
 gem "font-awesome-rails"
 gem 'pg'
+gem 'activeadmin'
+gem 'arctic_admin'
+gem 'cancancan'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
@@ -48,7 +51,7 @@ group :development do
 end
 
 group :production do
-  
+
 end
 
 group :test do

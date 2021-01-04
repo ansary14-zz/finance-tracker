@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
   resources :user_stocks, only: [:create, :destroy]
   devise_for :users
   root 'welcome#index'
